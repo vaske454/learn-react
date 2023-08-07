@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+h4 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+h5 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+h6 {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+/*ovo je tzv pseudo element selektor koji cilja elemente s ovom klasom nakon svakog azuriranja to elementa*/
+/*Ovaj CSS kod primjenjuje stil na pseudo-elemente nakon elemenata s klasom "board-row" i koristi "clear: both" kako bi spriječio "plivanje" drugih elemenata oko tog elementa. Pseudo-element je postavljen kao prazan i tretiran je kao tablica.*/
+.board-row:after {
+    clear: both; /*neće dopustiti da se ništa poravnava sa svojom desnom ili lijevom stranom. To se koristi kako bi se osiguralo da elementi unutar "board-row" ne "plivaju" oko ovog elementa i da ostanu na njegovom ispravnom mjestu*/
+    content: ''; /*Ovo postavlja "content" svojstvo na prazan niz, što je obavezno za pseudo-elemente. Prazan niz označava da ovaj pseudo-element neće prikazivati nikakav sadržaj, ali je potrebno napisati kako bi se pseudo-element prikazao*/
+    display: table;/*Ovo postavlja svojstvo "display" na "table", što znači da će pseudo-element biti tretiran kao tablica. Ovo se često koristi za postizanje različitih rasporeda elemenata, jer tablice imaju određena pravila rasporeda i poravnanja*/
+}
+
+.status {
+    margin-bottom: 10px;
+}
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info {
+    margin-left: 20px;
+}
