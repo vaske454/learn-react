@@ -5,14 +5,16 @@ import "./styles.css";
 // import './index.css';
 
 // komponenta koju smo kreirali u App.js
-import App from './App';
+import Products from './Products';
+// import App from './App';
+
 
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
 root.render(
   <StrictMode>
-    <App />
+    <Products />
   </StrictMode>
 );
 
