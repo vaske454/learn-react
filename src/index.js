@@ -5,9 +5,10 @@ import "./styles.css";
 // import './index.css';
 
 // komponenta koju smo kreirali u App.js
-import Profile from './Profile';
+// import Profile from './Profile';
 // import Products from './Products';
 // import App from './App';
+import RenderingList from "./RenderingList";
 
 
 // import reportWebVitals from './reportWebVitals';
@@ -15,7 +16,7 @@ import Profile from './Profile';
 const root = ReactDOM.createRoot(document.querySelector('#root'));
 root.render(
   <StrictMode>
-    <Profile />
+    <RenderingList />
   </StrictMode>
 );
 
