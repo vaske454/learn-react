@@ -1,3 +1,5 @@
+//Locally generated data: If your data is generated and persisted locally
+// (e.g. notes in a note-taking app), use an incrementing counter, crypto.randomUUID() or a package like uuid when creating items.
 export const people = [{
     id: 0,
     name: 'Creola Katherine Johnson',
